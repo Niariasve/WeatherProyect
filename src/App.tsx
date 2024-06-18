@@ -25,7 +25,7 @@ function App() {
 			<Grid xs={12} sm={6} md={4} lg={4}>
 				<Summary></Summary>
 			</Grid>
-			<Grid lgOffset={2} xs={12} ms={8} md={8} lg={8}>
+			<Grid  xs={12} ms={8} md={8} lg={8} lgOffset={2}>
 				<BasicTable></BasicTable>
 			</Grid>
 	    </Grid>
