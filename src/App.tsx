@@ -29,9 +29,10 @@ function App() {
 			let nowTime = (new Date()).getTime()
 
 			if(expiringTime === null || nowTime > parseInt(expiringTime)) {
+				console.log('No local storage')
 				let API_KEY = "c4ed95cc20d66697b454863af35cf095"
 				let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=${API_KEY}`)
-				let savedTextXML = await response.text();
+				savedTextXML = await response.text();
 
 				let hours = 1
 				let delay = hours * 3600000
